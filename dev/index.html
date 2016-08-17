@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <title>index</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="index">
+    <div class="fixed-footer clearfix">
+        <div class="col4 col-nav"><a v-link="{ path: '/dir' }" class="cur" href="javascript:void(0);">就业指南</a></div>
+        <div class="col4 col-nav"><a v-link="{ path: '/match' }" href="javascript:void(0);">岗位匹配</a></div>
+        <div class="col4 col-nav"><a v-link="{ path: '/jobwanted' }" href="javascript:void(0);">求职意向</a></div>
+        <div class="col4 col-nav"><a v-link="{ path: '/recruit' }" href="javascript:void(0);">招聘会</a></div>
+    </div>
+
+    <router-view></router-view>
+</body>
+<script data-main="js/index" src="lib/requirejs/require.js"></script>
+</html>
